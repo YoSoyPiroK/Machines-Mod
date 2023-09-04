@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "machines-mod",
+	"version": "${version}",
+	"name": "Machines Mod",
+	"description": "Mod inspired by Create developed by a beginner dev",
+	"authors": [
+		"Pirok"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT License",
+	"icon": "assets/machines-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pirok.machinesmod.MachinesMod"
+		],
+		"client": [
+			"net.pirok.machinesmod.MachinesModClient"
+		],
+		"fabric-datagen": [
+			"net.pirok.machinesmod.MachinesModDataGenerator"
+		]
+	},
+	"mixins": [
+		"machines-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
